@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+</head>
+<body>
+
+<style>
+    /*documen css begin*/
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        font: 14px 'Microsoft YaHei', Verdana, Arial, Helvetica, sans-serif;
+        color: #666;
+        background-color: #fff;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: normal;
+    }
+
+    ol, ul {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    img {
+        border: 0;
+    }
+
+    input, textarea {
+        outline: none;
+    }
+
+    .clearfix:after {
+        display: block;
+        content: ".";
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+
+    .clearfix {
+        zoom: 1;
+    }
+
+    .floor {
+        margin: 0 auto;
+        width: 1200px;
+    }
+
+    /*documen css end*/
+
+    .collar {
+        margin: 80px auto 0;
+        width: 600px;
+    }
+
+    .collarWrapper {
+        position: relative;
+        float: left;
+        width: 100%;
+        height: 300px;
+    }
+
+    .collarItem {
+        position: absolute;
+        background-color: #f90;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        border-radius: 100%;
+        width: 140px;
+        height: 140px;
+    }
+
+    .collarItem:nth-child(1) {
+        background-color: #090b24;
+    }
+
+    .collarItem:nth-child(2) {
+        background-color: #ff0100;
+    }
+
+    .collarItem:nth-child(3) {
+        background-color: #0200fe;
+    }
+
+    .collarItem:nth-child(4) {
+        background-color: #999;
+    }
+
+    .collarItem:nth-child(5) {
+        background-color: #00a0e9;
+    }
+</style>
+
+<div class="collar">
+    <div class="collarWrapper clearfix">
+        <div class="collarItem"></div>
+        <div class="collarItem"></div>
+        <div class="collarItem"></div>
+        <div class="collarItem"></div>
+        <div class="collarItem"></div>
+        <div class="collarItem"></div>
+    </div>
+</div>
+
+<script src="./js/collarSpin.js"></script>
+<script>
+    var spin = new collarSpin();
+</script>
+</body>
+</html>
